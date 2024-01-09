@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>youtube 따라만들기</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+#sidebar {
+	float: left;
+	background-color: gold;
+	width: 220px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%
+}
+#contents {
+	float: left;
+	margin: 0 50px;
+	width: calc(100% - 350px); /* 서로 다른 unit을 계산해주는 calc() */
+	height: 5000px;
+	margin-left: 250px
+}
+.clip {
+	width: calc(25% - 30px);
+	float: left;
+	margin-right: 30px
+}
+.clip > img {  /* > : children selector (자식 요소 선택자) */
+	width: 100%;
+}
+.owner {
+	display: flow-root;
+	letter-spacing: -1px /* 글자 자간을 조정하는 속성 */
+}
+.owner img {
+	float: left;	
+	margin-top: 20px;
+	margin-right: 20px;	
+}
+.clip-title {
+	margin-top: 20px;
+}
+.clip-author, .clip-info {
+	margin-left: 80px;
+	color: #dcdcdc
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="sidebar">사이드바</div>
+		<div id="contents">
+			<div class="clip">
+				<img src="
+https://picsum.photos/id/1/250/150
+" alt="clip video">
+				<div class="owner">
+					<img src="
+https://picsum.photos/60
+" alt="broadcast logo">
+					<p class="clip-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p class="clip-author">broadcast</p>
+					<p class="clip-info">87k views &middot; 4 hours age</p>
+				</div>
+			</div>
+			<div class="clip">
+				<img src="
+https://picsum.photos/id/10/250/150
+" alt="clip video">
+				<div class="owner">
+					<img src="
+https://picsum.photos/60
+" alt="broadcast logo">
+					<p class="clip-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p class="clip-author">broadcast</p>
+					<p class="clip-info">87k views &middot; 4 hours age</p>
+				</div>
+			</div>
+			<div class="clip">
+				<img src="
+https://picsum.photos/id/100/250/150
+" alt="clip video">
+				<div class="owner">
+					<img src="
+https://picsum.photos/60
+" alt="broadcast logo">
+					<p class="clip-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p class="clip-author">broadcast</p>
+					<p class="clip-info">87k views &middot; 4 hours age</p>
+				</div>
+			</div>
+			<div class="clip">
+				<img src="
+https://picsum.photos/id/1000/250/150
+" alt="clip video">
+				<div class="owner">
+					<img src="
+https://picsum.photos/60
+" alt="broadcast logo">
+					<p class="clip-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p class="clip-author">broadcast</p>
+					<p class="clip-info">87k views &middot; 4 hours age</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+</body>
+</html> 
